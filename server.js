@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
   res.send('Works');
 });
 
-app.listen(3030, () => console.log('server started'));
+app.listen(process.env.PORT || 3030, () => console.log('server started'));
