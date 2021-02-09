@@ -21,10 +21,10 @@ router.post('/', async (req, res) => {
             Name: 'Adilkhan',
           },
         ],
-        Subject: 'Greetings from Mailjet.',
-        TextPart: 'My first Mailjet email',
+        Subject: 'Новая заявка Speakia.kz',
+        TextPart: `Заявка от ${req.body.name}, номер: ${req.body.phoneNumber}`,
         HTMLPart:
-          "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+          `<p>Заявка от <strong>${req.body.name}</strong>, номер: <strong>${req.body.phoneNumber}</strong></p>`,
         CustomID: 'AppGettingStartedTest',
       },
     ],
@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
       console.log(err.statusCode);
     });
 
-  res.json({ nice: req.body });
+  res.json({ data: req.body });
 });
 
 module.exports = router;
