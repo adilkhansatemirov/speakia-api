@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
       {
         From: {
           Email: 'adilkhansatemirov@gmail.com',
-          Name: 'Adilkhan',
+          Name: 'Speakia.kz',
         },
         To: [
           {
