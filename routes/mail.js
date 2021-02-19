@@ -17,8 +17,8 @@ router.post('/', async (req, res) => {
         },
         To: [
           {
-            // Email: 'akmor.shokparbay@nu.edu.kz',
-            Email: '170103156@stu.sdu.edu.kz',
+            Email: 'akmor.shokparbay@nu.edu.kz',
+            // Email: '170103156@stu.sdu.edu.kz',
             Name: 'Adilkhan',
           },
         ],
